@@ -1,0 +1,132 @@
+/* contact section */
+
+.contact {
+  padding: 96px 0;
+  background: var(--gradient-warm);
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 56px;
+  color: var(--primary-foreground);
+}
+
+.contact-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  opacity: 0.9;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.contact-title {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .contact-title {
+    font-size: 48px;
+  }
+}
+
+.contact-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact-card {
+  display: block;
+  background-color: var(--card);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: var(--shadow-big);
+  transition: transform 0.2s;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: oklch(0.62 0.16 38 / 0.1);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.contact-card-title {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 4px;
+}
+
+.contact-card-desc {
+  font-size: 14px;
+  color: var(--muted-foreground);
+  margin-bottom: 8px;
+}
+
+.contact-card-value {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.contact-card:hover .contact-card-value {
+  text-decoration: underline;
+}
+
+.contact-card-value-email {
+  word-break: break-all;
+}
+
+.contact-location {
+  margin-top: 40px;
+  text-align: center;
+  color: oklch(0.99 0.005 85 / 0.95);
+}
+
+.contact-location-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.8;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.contact-location-text {
+  font-family: Georgia, serif;
+  font-size: 20px;
+}

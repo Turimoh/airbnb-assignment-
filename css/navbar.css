@@ -1,0 +1,117 @@
+/* navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: rgba(254, 250, 241, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(224, 213, 202, 0.6);
+}
+
+.navbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(19, 66, 69, 1);
+}
+
+.navbar-brand-accent {
+  color: rgba(212, 92, 54, 1);
+}
+
+/* hide nav links on mobile, show on desktop */
+.nav-links {
+  display: none;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(14, 38, 39, 0.8);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: rgba(212, 92, 54, 1);
+}
+
+.btn-book-nav {
+  display: none;
+  background-color: rgba(212, 92, 54, 1);
+  color: rgba(253, 251, 248, 1);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  box-shadow: 0 10px 30px -15px rgba(14, 38, 39, 0.18);
+}
+
+.btn-book-nav:hover {
+  background-color: rgba(250, 137, 40, 1);
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(14, 38, 39, 1);
+  display: flex;
+}
+
+/* mobile dropdown */
+.mobile-menu {
+  display: none;
+  background-color: rgba(254, 250, 241, 1);
+  border-top: 1px solid rgba(224, 213, 202, 0.6);
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+.mobile-nav-list {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobile-nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(14, 38, 39, 0.8);
+  display: block;
+  transition: color 0.2s;
+}
+
+.mobile-nav-link:hover {
+  color: rgba(212, 92, 54, 1);
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+  .btn-book-nav {
+    display: inline-flex;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}

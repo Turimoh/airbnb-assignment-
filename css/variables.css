@@ -1,0 +1,18 @@
+/* color variables - makes it easier to change colors later */
+:root {
+  --background: oklch(0.985 0.012 85);
+  --foreground: oklch(0.25 0.03 200);
+  --card: oklch(1 0 0);
+  --primary: oklch(0.62 0.16 38);
+  --primary-foreground: oklch(0.99 0.005 85);
+  --primary-glow: oklch(0.74 0.17 55);
+  --secondary: oklch(0.35 0.05 200);
+  --secondary-foreground: oklch(0.99 0.005 85);
+  --muted: oklch(0.94 0.015 80);
+  --muted-foreground: oklch(0.45 0.03 200);
+  --border: oklch(0.88 0.02 70);
+  --gradient-hero: linear-gradient(135deg, oklch(0.25 0.03 200 / 0.7), oklch(0.62 0.16 38 / 0.55));
+  --gradient-warm: linear-gradient(135deg, oklch(0.62 0.16 38), oklch(0.74 0.17 55));
+  --shadow-card: 0 10px 30px -15px oklch(0.25 0.03 200 / 0.18);
+  --shadow-big: 0 20px 50px -20px oklch(0.25 0.03 200 / 0.25);
+}
